@@ -25,11 +25,19 @@ while True:
                 print("4")
             if fingerup == [1, 1, 1, 1, 1]:
                 print("5")
+            if fingerup == [1, 0, 0, 0, 0]:
+                print("6")
+            if fingerup == [1, 1, 0, 0, 0]:
+                print("7")
+            if fingerup == [1, 1, 1, 0, 0]:
+                print("8")
+            if fingerup == [1, 1, 1, 1, 0]:
+                print("9")
 
     cv2.imshow("Video",img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
-    time.sleep(0.5)
+    time.sleep(0.3)
 
 video.release()
 cv2.destroyAllWindows()
